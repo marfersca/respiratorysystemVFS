@@ -109,15 +109,33 @@
    <description>
     <p>Complete the sentences with the appropriate words.</p>
    </description>
-   <messages />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Complete the sentences with the appropriate words.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Congratulations!</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Don't give up... Try again</p>
+    </cell>
+   </messages>
    <settings margin="8" report="true" reportActions="false">
     <container bgColor="0xFFFFFF">
      <image name="a4df68f18f06ed7ff3c94d76e01127c6.gif" tiled="true" />
      <counters time="true" actions="true" score="true" />
     </container>
     <window bgColor="0xCCFFFF" border="true">
-     <position x="214" y="4" />
-     <size width="499" height="281" />
+     <size width="533" height="296" />
     </window>
    </settings>
    <document>
