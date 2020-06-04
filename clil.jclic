@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="clil" version="0.1.3">
+ <settings>
+  <title>CLIL</title>
+  <revision description="created" date="6/4/20" />
+  <descriptors />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es" />
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="respiratory system" />
+  <item name="Complete the sentences" />
+ </sequence>
+ <activities>
+  <activity class="@text.WrittenAnswer" name="respiratory system" code="">
+   <description>
+    <p>In this activity you have to click on an image and write the name of the part that points the arrow.</p>
+   </description>
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial Rounded MT Bold" size="18" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>What's the name of these parts of the respiratory system?</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Good job! =)</p>
+    </cell>
+    <cell type="finalError">
+     <style>
+      <font family="Arial Black" size="17" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Oops! Try again</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xC0C0C0">
+     <image name="funny-anatomical-mascot-kidneys-muscle-tooth-lungs-heart-liver-stomach-brain-bone-digestive-system-characters-cute-human-body-internal-organs-anatomy-healthcare-medi.jpg" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true">
+     <gradient source="0xFFCCCC" dest="0xFFFFFF" angle="0" />
+    </window>
+   </settings>
+   <cells rows="3" cols="3" cellWidth="224.0" cellHeight="208.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell image="1.png" />
+    <cell image="2.png" />
+    <cell image="3.png" />
+    <cell image="4.png" />
+    <cell image="5.png">
+     <style transparent="true" />
+    </cell>
+    <cell image="6.png" />
+    <cell image="7.png" />
+    <cell>
+     <style transparent="true">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell>
+     <style transparent="true">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="3" cols="3" cellWidth="116.0" cellHeight="55.0" border="true" id="answers">
+    <style transparent="true" borderStroke="0.7" markerStroke="5.0">
+     <color background="0xFFFFFF" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="3" />
+    <cell>
+     <p>trachea</p>
+    </cell>
+    <cell>
+     <p>mouth</p>
+    </cell>
+    <cell>
+     <p>lungs</p>
+    </cell>
+    <cell>
+     <p>nose</p>
+    </cell>
+    <cell>
+     <p>diaphragm</p>
+    </cell>
+    <cell>
+     <p>pharynx</p>
+    </cell>
+    <cell>
+     <p>larynx</p>
+    </cell>
+    <cell />
+    <cell />
+   </cells>
+   <scramble times="31" primary="false" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@text.FillInBlanks" name="Complete the sentences" code="">
+   <description>
+    <p>Complete the sentences with the appropriate words.</p>
+   </description>
+   <messages />
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFFFF">
+     <image name="a4df68f18f06ed7ff3c94d76e01127c6.gif" tiled="true" />
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFFF" border="true">
+     <position x="214" y="4" />
+     <size width="499" height="281" />
+    </window>
+   </settings>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial Narrow" background="0xFFFFFF" size="16" bold="true" italic="false">lungs	    oxygen       trachea       nose      bronchi      alveoli      carbon dioxide</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">a) Our bodies need </text>
+      <target>
+       <answer>oxygen</answer>
+       <response fill="_" length="6" maxLength="6" />
+       <text>oxygen</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false"> from the air to work</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">b) When we breathe, air goes through our </text>
+      <target>
+       <answer>nose</answer>
+       <response fill="_" length="4" maxLength="4" />
+       <text>nose</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false"> and into our </text>
+      <target>
+       <answer>lungs</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>lungs</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">c) To get to our lungs, the air goes through the </text>
+      <target>
+       <answer>trachea</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>trachea</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">d) The air inside the </text>
+      <target>
+       <answer>lungs</answer>
+       <response fill="_" length="5" maxLength="5" />
+       <text>lungs</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false"> goes into small air sacs, called </text>
+      <target>
+       <answer>alveoli</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>alveoli</text>
+      </target>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">e) When you breathe out, the </text>
+      <target>
+       <answer>carbon dioxide</answer>
+       <response fill="_" length="14" maxLength="14" />
+       <text>carbon dioxide</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false"> leaves your body</text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false">f) The air goes down the </text>
+      <target>
+       <answer>trachea</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>trachea</text>
+      </target>
+      <text family="Arial" background="0xFFFFFF" size="16" bold="false" italic="false"> and into two tubes, called </text>
+      <target>
+       <answer>bronchi</answer>
+       <response fill="_" length="7" maxLength="7" />
+       <text>bronchi</text>
+      </target>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="a4df68f18f06ed7ff3c94d76e01127c6.gif" file="a4df68f18f06ed7ff3c94d76e01127c6.gif" animated="false" />
+  <media name="funny-anatomical-mascot-kidneys-muscle-tooth-lungs-heart-liver-stomach-brain-bone-digestive-system-characters-cute-human-body-internal-organs-anatomy-healthcare-medi.jpg" file="funny-anatomical-mascot-kidneys-muscle-tooth-lungs-heart-liver-stomach-brain-bone-digestive-system-characters-cute-human-body-internal-organs-anatomy-healthcare-medi.jpg" />
+  <media name="1.png" file="1.png" />
+  <media name="2.png" file="2.png" />
+  <media name="3.png" file="3.png" />
+  <media name="4.png" file="4.png" />
+  <media name="5.png" file="5.png" />
+  <media name="6.png" file="6.png" />
+  <media name="7.png" file="7.png" />
+ </mediaBag>
+</JClicProject>
+

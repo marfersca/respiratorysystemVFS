@@ -1,0 +1,38 @@
+{
+  "title": "CLIL",
+  "date": "4/06/20",
+  "description": {},
+  "license": {
+    "es": "Esta obra está bajo una licencia de Creative Commons <a href=\"https://creativecommons.org/licenses/by-nc-sa/4.0\">BY-NC-SA<\/a>"
+  },
+  "meta_langs": [
+    "es"
+  ],
+  "mainFile": "clil.jclic",
+  "cover": "project-cover.jpg",
+  "thumbnail": "project-thumb.jpg",
+  "activities": 2,
+  "mediaFiles": 14,
+  "totalSize": 346493,
+  "files": [
+    "1.png",
+    "2.png",
+    "3.png",
+    "4.png",
+    "5.png",
+    "6.png",
+    "7.png",
+    "a4df68f18f06ed7ff3c94d76e01127c6.gif",
+    "clil.jclic",
+    "clil.jclic.js",
+    "favicon.ico",
+    "funny-anatomical-mascot-kidneys-muscle-tooth-lungs-heart-liver-stomach-brain-bone-digestive-system-characters-cute-human-body-internal-organs-anatomy-healthcare-medi.jpg",
+    "icon-192.png",
+    "icon-72.png",
+    "imsmanifest.xml",
+    "index.html",
+    "project-cover.jpg",
+    "project-thumb.jpg",
+    "project.json"
+  ]
+}
